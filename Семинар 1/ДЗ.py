@@ -89,6 +89,14 @@ if int(n[0]) + int(n[1]) + int(n[2]) == int(n[3]) + int(n[4]) + int(n[5]):
     print('yes')
 else:
     print('no')
+
+n = str(input())
+a = int(n[0]) + int(n[1]) + int(n[2])
+b = int(n[3]) + int(n[4]) + int(n[5])
+if a==b:
+    print('yes')
+else:
+    print('no')
 """
 # Задача 8: Требуется определить,
 # можно ли от шоколадки размером n × m долек отломить k долек,
