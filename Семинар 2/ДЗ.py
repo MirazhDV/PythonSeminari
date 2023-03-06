@@ -40,7 +40,10 @@ p = x * y
 print()
 print(f"Сумма чисел = {s}")
 print(f"Произведение чисел = {p}")
-
+for i in range(s):
+    for j in range(p):
+        if s == i + j and p == i * j:
+            print(f"Число X = {i}, а число Y = {j}")
 
 # Задача 14: 
 # Требуется вывести все целые степени двойки 
