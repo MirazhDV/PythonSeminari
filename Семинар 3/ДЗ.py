@@ -9,7 +9,7 @@
 #     3
 #     -> 1
 
-import random
+""" import random
 n = int(input("Количество элементов: "))
 a = [random.randint(1,10) for i in range(1,n+1)]
 x = int(input("Какое число ищем? "))
@@ -18,5 +18,32 @@ print (a)
 for i in range(len(a)):
     if a[i] == x:
         count+=1
-print(count)
+print(count) """
+
+# Задача 18: Требуется найти в массиве A[1..N] 
+# самый близкий по величине элемент к заданному числу X. 
+# Пользователь в первой строке вводит натуральное число N – количество элементов в массиве. 
+# В последующих  строках записаны N целых чисел Ai. Последняя строка содержит число X
+# *Пример:*
+# 5
+#     1 2 3 4 5
+#     6
+#     -> 5
+
+from random import randint
+n = int(input("Количество элементов: "))
+a = [randint(1,10) for i in range(1,n+1)]
+x = int(input("Число ближайшее к какому? "))
+print (a)
+closest = a[0]
+min_diff = abs(a[0] - x) 
+
+for i in range(1, n):
+    diff = a[i] - x 
+    if diff < 0: 
+        diff = -diff
+    if diff < min_diff: 
+        closest = a[i]
+        min_diff = diff 
+print(closest)
 
