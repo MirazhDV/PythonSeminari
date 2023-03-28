@@ -130,11 +130,32 @@ decimal_num = int(b, 2)
 summa = d + decimal_num
 print(summa) """
 
-c = str(input())
+""" c = str(input())
 k = int(input())
 decimal_num = int(c, 2)
 print(decimal_num)
 if k % 100 == 0:
     sdacha = k - decimal_num
 sdacha = int(sdacha)
-print(sdacha)
+print(sdacha) """
+
+name = str(input())
+cena = int(input())
+ves = int(input())
+deneg = int(input())
+itogo = ves * cena
+sdacha = deneg - itogo
+chek = '================Чек================'
+tovar = f'Товар:{name}'
+list_cena = f'Цена:{ves}кг * {cena}руб/кг'
+list_itogo = f'Итого:{itogo}руб'
+vneseno = f'Внесено:{deneg}руб'
+list_sdacha = f'Сдача:{sdacha}руб'
+niz = '==================================='
+print(chek)
+print(tovar)
+print(list_cena)
+print(list_itogo)
+print(vneseno)
+print(list_sdacha)
+print(niz)
