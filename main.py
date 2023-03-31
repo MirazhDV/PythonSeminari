@@ -58,9 +58,9 @@ print(eda) """
 
 """ name = input()
 shkaf = int(input())  #832
-gruppa = shkaf / 100 
-nomer = shkaf % 10 
-krovatka = shkaf / 10 % 10 
+gruppa = shkaf / 100
+nomer = shkaf % 10
+krovatka = shkaf / 10 % 10
 gruppa = int(gruppa)
 nomer = int(nomer)
 krovatka = int(krovatka)
@@ -88,9 +88,9 @@ maximum = (kra + sin) + 1
 maximum = int(maximum)
 print(maximum) """
 
-""" n = int(input())  
-m = int(input())  
-t = int(input())  
+""" n = int(input())
+m = int(input())
+t = int(input())
 hours = t % (60 * 24)# // 60)
 minutes = ((t + m) % 60)
 print(f"{hours}:{minutes}") """
@@ -123,7 +123,7 @@ c = int(input())
 s = b - a
 t = s / c
 print(t) """
-""" 
+"""
 d = int(input())
 b = str(input())
 decimal_num = int(b, 2)
@@ -145,13 +145,13 @@ ves = int(input())
 deneg = int(input())
 itogo = ves * cena
 sdacha = deneg - itogo
-chek = '================Чек================'
-tovar = f'Товар:{name}'
-list_cena = f'Цена:{ves}кг * {cena}руб/кг'
-list_itogo = f'Итого:{itogo}руб'
-vneseno = f'Внесено:{deneg}руб'
-list_sdacha = f'Сдача:{sdacha}руб'
-niz = '==================================='
+chek =         '================Чек================'
+tovar =       f'Товар:                       {name}'
+list_cena =   f'Цена:        {ves}кг * {cena}руб/кг'
+list_itogo =  f'Итого:                   {itogo}руб'
+vneseno =     f'Внесено:                 {deneg}руб'
+list_sdacha = f'Сдача:                  {sdacha}руб'
+niz =          '==================================='
 print(chek)
 print(tovar)
 print(list_cena)
@@ -159,3 +159,14 @@ print(list_itogo)
 print(vneseno)
 print(list_sdacha)
 print(niz)
+
+
+""" n = int(input())
+m = int(input())
+k1 = int(input())
+k2 = int(input())
+x = (n * m - k2 * n) / (k1 - k2)
+y = n - x
+# x = (total_weight * cost_per_kg - cost_2 * total_weight) / (cost_1 - cost_2)
+# y = total_weight - x
+print(round(x),round(y)) """
